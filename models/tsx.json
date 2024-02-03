@@ -1,0 +1,110 @@
+{
+	"stateless.function.component": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "sfc",
+		"body": [
+			"export default function ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}() {",
+			"  return $1",
+			"}"
+		],
+		"description": "Stateless Function Component"
+	},
+	"stateless.function.component.props": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "sfcp",
+		"body": [
+			"type ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}Props = {}",
+			"",
+			"export default function ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}({}: ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}Props) {",
+			"  return $1",
+			"}"
+		],
+		"description": "Stateless Function Component With Props"
+	},
+	"stateless.arrow.function.component": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "safc",
+		"body": [
+			"import { type FC } from 'react'",
+			"",
+			"export const ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}: FC = () => {",
+			"  return $1",
+			"}"
+		],
+		"description": "Stateful Arrow Function Component"
+	},
+	"stateless.arrow.function.component.props": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "safcp",
+		"body": [
+			"import { type FC } from 'react'",
+			"",
+			"type ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}Props = {}",
+			"",
+			"export const ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}: FC<${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}Props> = ({}) => {",
+			"  return $1",
+			"}"
+		],
+		"description": "Stateless Arrow Function Component With Props"
+	},
+	"react.function.component": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "rfc",
+		"body": [
+			"import { useState } from 'react'",
+			"",
+			"export default function ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}() {",
+			"  const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialValue})",
+			"",
+			"  return $1",
+			"}"
+		],
+		"description": "React Function Component"
+	},
+	"react.function.component.props": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "rfcp",
+		"body": [
+			"import { useState } from 'react'",
+			"",
+			"type ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}Props = {}",
+			"",
+			"export default function ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}({}: ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}Props) {",
+			"  const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialValue})",
+			"",
+			"  return $1",
+			"}"
+		],
+		"description": "React Function Component With Props"
+	},
+	"react.arrow.function.component": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "rafc",
+		"body": [
+			"import { type FC, useState } from 'react'",
+			"",
+			"export const ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}: FC = () => {",
+			"  const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialValue})",
+			"",
+			"  return $1",
+			"}"
+		],
+		"description": "React Arrow Function Component"
+	},
+	"react.arrow.function.component.props": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "rafcp",
+		"body": [
+			"import { type FC, useState } from 'react'",
+			"",
+			"type ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}Props = {}",
+			"",
+			"export const ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}: FC<${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}Props> = ({}) => {",
+			"  const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialValue})",
+			"",
+			"  return $1",
+			"}"
+		],
+		"description": "React Arrow Function Component With Props"
+	}
+}

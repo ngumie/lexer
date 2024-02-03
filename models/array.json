@@ -1,0 +1,140 @@
+{
+	"javascript.forOf": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "fof",
+		"body": [
+			"for (const ${1:element} of ${TM_SELECTED_TEXT}) {",
+			"    ${2:expression}",
+			"}"
+		],
+		"description": "For-of loop"
+	},
+	"javascript.forIn": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fin",
+		"body": [
+			"for(let ${1:element} in ${TM_SELECTED_TEXT}) {",
+			"    ${2:expression}",
+			"}"
+		],
+		"description": "For in"
+	},
+	"javascript.forEach": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fec",
+		"body": [
+			"${TM_SELECTED_TEXT}.forEach((${1:element}, ${2:index}, ${3:array}) => {",
+			"    ${4:expression}",
+			"}, ˆ${5:thisArg})"
+		],
+		"description": "For each"
+	},
+	"javascript.map": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fma",
+		"body": [
+			"${TM_SELECTED_TEXT}.map((${1:element}, ${2:index}, ${3:array}) => {",
+			"    ${4:expression}",
+			"})"
+		],
+		"description": "Mapping"
+	},
+	"javascript.filter": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fil",
+		"body": [
+			"${TM_SELECTED_TEXT}.filter(((${1:element}, ${2:index}, ${3:array}) => {",
+			"    ${4:expression}",
+			"})"
+		],
+		"description": "Filter"
+	},
+	"javascript.find": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fet",
+		"body": [
+			"${TM_SELECTED_TEXT}.find((${1:element}, ${2:index}, ${3:array}) => {",
+			"    ${4:expression}",
+			"})"
+		],
+		"description": "Find"
+	},
+	"javascript.reduce": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fre",
+		"body": [
+			"${TM_SELECTED_TEXT}.reduce((${1:element}, ${2:index}, ${3:array}) => {",
+			"    ${4:expression}",
+			"}, ${3:initialValue})"
+		],
+		"description": "Reduce"
+	},
+	"javascript.some": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fso",
+		"body": [
+			"${TM_SELECTED_TEXT}.some((${1:element}, ${2:index}, ${3:array}) => {",
+			"    ${4:expression}",
+			"})"
+		],
+		"description": "Some"
+	},
+	"javascript.sort": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fsr",
+		"body": [
+			"${TM_SELECTED_TEXT}.sort((${1:a}, ${2:b}) => {",
+			"    ${4:compare}",
+			"})"
+		],
+		"description": "Sort"
+	},
+	"javascript.push": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fpu",
+		"body": [
+			"${TM_SELECTED_TEXT}.push(${1:element})"
+		],
+		"description": "Push"
+	},
+	"javascript.splice": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fsp",
+		"body": [
+			"${TM_SELECTED_TEXT}.splice(${1:index}, ${2:deleteCount}, ${3:addElement})"
+		],
+		"description": "Splice"
+	},
+	"javascript.with": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fwi",
+		"body": [
+			"${TM_SELECTED_TEXT}.with(${1:index}, ${2:value})"
+		],
+		"description": "With"
+	},
+	"javascript.at": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fat",
+		"body": [
+			"${TM_SELECTED_TEXT}.at(${1:index})"
+		],
+		"description": "At"
+	},
+	"javascript.includes": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fic",
+		"body": [
+			"${TM_SELECTED_TEXT}.includes(${1:searchElement}, ${2:fromIndex})"
+		],
+		"description": "Includes"
+	},
+	"javascript.indexOf": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "fid",
+		"body": [
+			"${TM_SELECTED_TEXT}.indexOf(${1:searchElement}, ${2:fromIndex})"
+		],
+		"description": "Index of"
+	}
+}

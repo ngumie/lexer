@@ -1,0 +1,137 @@
+{
+	"html.base.struct": {
+		"scope": "html",
+		"prefix": "hbs",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang='${1:pt-BR}'>",
+			"    <head>",
+			"        <meta charset='utf-8' />",
+			"        <meta name='viewport' content='width=device-width' />",
+			"        <link rel='icon' href='public/favicon.svg' type='image/svg+xml' />",
+			"        <link rel='stylesheet' href='styles.css' />",
+			"        <title>${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}</title>",
+			"    </head>",
+			"    <body>",
+			"        $2",
+			"    </body>",
+			"</html>"
+		],
+		"description": "Base structure"
+	},
+	"html.base.react": {
+		"scope": "html",
+		"prefix": "hbr",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang='${1:pt-BR}'>",
+			"    <head>",
+			"        <meta charset='utf-8' />",
+			"        <meta name='viewport' content='width=device-width' />",
+			"        <link rel='icon' href='public/favicon.svg' type='image/svg+xml' />",
+			"        <title>${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}</title>",
+			"    </head>",
+			"    <body>",
+			"        <div id='root'></div>",
+			"",
+			"        <script type='module' src='/src/main.tsx'></script>",
+			"    </body>",
+			"</html>"
+		],
+		"description": "React base structure"
+	},
+	"html.component.navbar": {
+		"scope": "html",
+		"prefix": "hcn",
+		"body": [
+			"<nav>",
+			"    <a href='/'>",
+			"        <img src='assets/logo.svg' alt='Logo Marca' />",
+			"    </a>",
+			"",
+			"    <ul>",
+			"        <li><a href='$1'>$2</a></li>",
+			"        <li><a href='$3'>$4</a></li>",
+			"        <li><a href='$5'>$6</a></li>",
+			"     </ul>",
+			"</nav>"
+		],
+		"description": "Navbar Component"
+	},
+	"html.component.details": {
+		"scope": "html",
+		"prefix": "hcd",
+		"body": [
+			"<details name='$1'>",
+			"    <summary>${2:title}</summary>",
+			"    <p>${3:body}</p>",
+			"</details>"
+		],
+		"description": "Detail List Component"
+	},
+	"html.component.avatar": {
+		"scope": "html",
+		"prefix": "hca",
+		"body": [
+			"<figure>",
+			"    <img src='assets/avatar.png' alt='Foto de perfil' />",
+			"</figure>"
+		],
+		"description": "Avatar Component"
+	},
+	"html.component.card": {
+		"scope": "html",
+		"prefix": "hcc",
+		"body": [
+			"<article>",
+			"    <header></header>",
+			"    <section></section>",
+			"    <footer></footer>",
+			"</article>"
+		],
+		"description": "Card Component"
+	},
+	"html.component.hero": {
+		"scope": "html",
+		"prefix": "hch",
+		"body": [
+			"<header>",
+			"    <figure>",
+			"        <img src='assets/$1' alt='$2' />",
+			"    </figure>",
+			"",
+			"    <section>",
+			"        <h2>${3:title}</h2>",
+			"        <p>${4:description}</p>",
+			"    </section>",
+			"</header>"
+		],
+		"description": "Hero Component"
+	},
+	"html.component.table": {
+		"scope": "html",
+		"prefix": "hct",
+		"body": [
+			"<table>",
+			"    <caption>${1:Legend}</caption>",
+			"",
+			"    <thead>",
+			"        <tr>",
+			"            <th>${2:title}</th>",
+			"            <th>${2:title}</th>",
+			"            <th>${2:title}</th>",
+			"        </tr>",
+			"    </thead>",
+			"",
+			"    <tbody>",
+			"        <tr>",
+			"            <td>${3:description}</td>",
+			"            <td>${3:description}</td>",
+			"            <td>${3:description}</td>",
+			"        </tr>",
+			"    </tbody>",
+			"</table>"
+		],
+		"description": "Table Component"
+	}
+}

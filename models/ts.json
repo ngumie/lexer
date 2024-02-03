@@ -1,0 +1,54 @@
+{
+	"typescript.array.readonly": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "tar",
+		"body": [
+			"const ${1:identifier}: readonly ${2:string}[] = [$3]"
+		],
+		"description": "Read-only array"
+	},
+	"typescript.interface": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "tif",
+		"body": [
+			"interface ${1:identifier} {",
+			"    ${2:property}: ${3:type}",
+			"}"
+		],
+		"description": "Contract definition"
+	},
+	"typescript.typealias": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "tas",
+		"body": [
+			"type ${1:identifier} = $2"
+		],
+		"description": "Creating custom types"
+	},
+	"typescript.union": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "tun",
+		"body": [
+			"type ${1:identifier} = $2 | $3"
+		],
+		"description": "Known types of a variable"
+	},
+	"typescript.tuple": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "tup",
+		"body": [
+			"const ${1:identifier}: readonly [$2, $3] = [$4, $5]"
+		],
+		"description": "Array of fixed positions and known types"
+	},
+	"typescript.enum": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "ten",
+		"body": [
+			"enum ${1:identifier/(^.)(.*)/${1:/upcase}${2}/}} {",
+			"    ${2:property} = ${3:value}",
+			"}"
+		],
+		"description": "Enumerable"
+	}
+}

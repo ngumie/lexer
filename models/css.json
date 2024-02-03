@@ -1,0 +1,241 @@
+{
+	"css.selector.attribute": {
+		"scope": "css, scss, sass",
+		"prefix": "csa",
+		"body": [
+			"${1:input}[${2:checked}] { $3 }"
+		],
+		"description": "Attribute selector"
+	},
+	"css.selector.attribute.begins": {
+		"scope": "css, scss, sass",
+		"prefix": "csab",
+		"body": [
+			"[data-$1^='$2'] { $3 }"
+		],
+		"description": "Begins with"
+	},
+	"css.selector.attribute.contains": {
+		"scope": "css, scss, sass",
+		"prefix": "csac",
+		"body": [
+			"[data-$1*='$2'] {",
+			"    $3",
+			"}"
+		],
+		"description": "Contains"
+	},
+	"css.selector.attribute.ends": {
+		"scope": "css, scss, sass",
+		"prefix": "csae",
+		"body": [
+			"[data-$1$='$2'] {",
+			"    $3",
+			"}"
+		],
+		"description": "Ends with"
+	},
+	"css.align.center": {
+		"scope": "css, scss, sass",
+		"prefix": "cac",
+		"body": [
+			"display: flex;",
+			"align-items: center;",
+			"justify-content: center;"
+		],
+		"description": "CSS Center Alignment"
+	},
+	"css.align.end": {
+		"scope": "css, scss, sass",
+		"prefix": "cae",
+		"body": [
+			"display: flex;",
+			"align-items: center;",
+			"justify-content: end;"
+		],
+		"description": "CSS Center Alignment"
+	},
+	"css.layout.flex": {
+		"scope": "css, scss, sass",
+		"prefix": "clf",
+		"body": [
+			"display: flex;",
+			"align-items: ${1|start, center, end, stretch, baseline|};",
+			"justify-content: ${2|start, center, end, space-around, space-evenly, space-between|};",
+			"flex-wrap: ${3|wrap, nowrap|};",
+			"gap: $4;"
+		],
+		"description": "Flexible Container"
+	},
+	"css.layout.grid": {
+		"scope": "css, scss, sass",
+		"prefix": "clg",
+		"body": [
+			"display: grid;",
+			"grid-template-columns: repeat(auto-${1|fill,fit|}, minmax($2, $3));",
+			"grid-auto-rows: $4;",
+			"gap: $5;"
+		],
+		"description": "Grid Container"
+	},
+	"css.border.rounded": {
+		"scope": "css, scss, sass",
+		"prefix": "cbr",
+		"body": [
+			"border-radius: 8px;",
+			"border: 1px solid ${1:#f1f5f9};"
+		],
+		"description": "Rounded edges"
+	},
+	"css.reset": {
+		"scope": "css, scss, sass",
+		"prefix": "cr",
+		"body": [
+			"*, *::before, *::after {",
+			"    margin: 0;",
+			"    padding: 0;",
+			"    box-sizing: border-box;",
+			"}",
+			"",
+			":root {",
+			"    line-height: 1.5;",
+			"    font-size: 62.5%;",
+			"    font-family: system-ui, sans-serif;",
+			"    font-synthesis: none;",
+			"",
+			"    text-wrap: balance;",
+			"    text-rendering: optimizeLegibility;",
+			"    -webkit-font-smoothing: antialiased;",
+			"    -moz-osx-font-smoothing: grayscale;",
+			"}"
+		],
+		"description": "Normalize default patterns"
+	},
+	"css.reset.link": {
+		"scope": "css, scss, sass",
+		"prefix": "crl",
+		"body": [
+			"a {",
+			"    color: inherit;",
+			"    text-decoration: 2px underline wavy ${1:#f5a7ca};",
+			"",
+			"    $2",
+			"}"
+		],
+		"description": "Link Component"
+	},
+	"css.reset.image": {
+		"scope": "css, scss, sass",
+		"prefix": "cri",
+		"body": [
+			"img {",
+			"    display: block;",
+			"",
+			"    height: auto;",
+			"    max-width: 100%;",
+			"    object-fit: cover;",
+			"",
+			"    $1",
+			"}"
+		],
+		"description": "Image Component"
+	},
+	"css.reset.button": {
+		"scope": "css, scss, sass",
+		"prefix": "crb",
+		"body": [
+			"button {",
+			"    display: block;",
+			"",
+			"    cursor: point;",
+			"    border: 1px solid ${1:#f1f5f9};",
+			"",
+			"    $2",
+			"}"
+		],
+		"description": "Button component"
+	},
+	"css.reset.list": {
+		"scope": "css, scss, sass",
+		"prefix": "crli",
+		"body": [
+			"ul {",
+			"    list-style: none;",
+			"",
+			"    $1",
+			"}"
+		],
+		"description": "List Component"
+	},
+	"css.animation": {
+		"scope": "css, scss, sass",
+		"prefix": "can",
+		"body": [
+			"animation: ${1:name}, ${2:duration} ${3|ease,linear,ease-in,ease-out,ease-in-out|} ${4:delay} ${5|normal,infinite|} ${6|normal,reverse,alternate|} ${7|none,forwards,backwards,both|};"
+		],
+		"description": "Animation"
+	},
+	"css.animation.transition": {
+		"scope": "css, scss, sass",
+		"prefix": "cat",
+		"body": [
+			"transition: ${1:property}, ${2:duration} ${3|ease,linear,ease-in,ease-out,ease-in-out|}"
+		],
+		"description": "Transition"
+	},
+	"css.animation.keyframe": {
+		"scope": "css, scss, sass",
+		"prefix": "cak",
+		"body": [
+			"@keyframes ${1:name} {",
+			"    from { $2 }",
+			"    to { $3 }",
+			"}"
+		],
+		"description": "Animation keyframes"
+	},
+	"css.transform.translate": {
+		"scope": "css, scss, sass",
+		"prefix": "ctt",
+		"body": [
+			"translate: ${1:x}, ${2:y};"
+		],
+		"description": "Translate"
+	},
+	"css.transform.rotate": {
+		"scope": "css, scss, sass",
+		"prefix": "ctr",
+		"body": [
+			"rotate: $1deg;"
+		],
+		"description": "Rotate"
+	},
+	"css.transform.scale": {
+		"scope": "css, scss, sass",
+		"prefix": "cts",
+		"body": [
+			"scale: $1;"
+		],
+		"description": "Scale"
+	},
+	"css.responsive.container": {
+		"scope": "css, scss, sass",
+		"prefix": "crc",
+		"body": [
+			"@container (max-width: ${1:breakpoint}) {",
+			"    ${2:element} { ${3:rules} }",
+			"}"
+		],
+		"description": "Query Container"
+	},
+	"css.responsive.media": {
+		"scope": "css, scss, sass",
+		"prefix": "crm",
+		"body": [
+			"@media (max-width: ${1:breakpoint}) {",
+			"    ${2:element} { ${3:rules} }",
+			"}"
+		],
+		"description": "Media Query"
+	}
+}

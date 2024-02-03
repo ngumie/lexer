@@ -1,0 +1,95 @@
+{
+  "name": "lexer",
+  "version": "0.1.0",
+  "displayName": "Lexer",
+  "description": "Extremely simple snippets you'll actually use.",
+  "publisher": "Zeno",
+  "icon": "icon.png",
+  "license": "MIT",
+  "preview": true,
+  "repository": {
+    "url": "git://github.com/ngumie/lexer.git"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "models/html.json"
+      },
+      {
+        "language": "css",
+        "path": "models/css.json"
+      },
+      {
+        "language": "javascript",
+        "path": "models/jsx.json"
+      },
+      {
+        "language": "javascript",
+        "path": "models/node.json"
+      },
+      {
+        "language": "javascript",
+        "path": "models/array.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "models/jsx.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "models/node.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "models/array.json"
+      },
+      {
+        "language": "typescript",
+        "path": "models/tsx.json"
+      },
+      {
+        "language": "typescript",
+        "path": "models/ts.json"
+      },
+      {
+        "language": "typescript",
+        "path": "models/node.json"
+      },
+      {
+        "language": "typescript",
+        "path": "models/array.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "models/tsx.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "models/ts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "models/node.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "models/array.json"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "vsce package",
+    "build": "vsce publish",
+    "feat": "vsce publish minor"
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.23.0"
+  }
+}

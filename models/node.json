@@ -1,0 +1,50 @@
+{
+	"console.log": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "clg",
+		"body": [
+			"console.log(${TM_SELECTED_TEXT})"
+		],
+		"description": "Console logging"
+	},
+	"console.warn": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "cwa",
+		"body": [
+			"console.warn(${TM_SELECTED_TEXT})"
+		],
+		"description": "Console warning"
+	},
+	"console.table": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "ctb",
+		"body": [
+			"console.table(${TM_SELECTED_TEXT})"
+		],
+		"description": "Console table"
+	},
+	"console.debug": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "cbg",
+		"body": [
+			"console.debug(${TM_SELECTED_TEXT})"
+		],
+		"description": "Console debug"
+	},
+	"console.info": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "cin",
+		"body": [
+			"console.info(${TM_SELECTED_TEXT})"
+		],
+		"description": "Console information"
+	},
+	"console.error": {
+		"scope": "javascript, javascriptreact, typescript, typescriptreact",
+		"prefix": "cer",
+		"body": [
+			"console.error(${TM_SELECTED_TEXT})"
+		],
+		"description": "Console errorMessage"
+	}
+}
